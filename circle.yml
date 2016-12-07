@@ -4,4 +4,7 @@ machine:
     version: 2.2.6
 database:
   override:
-    - cd spec/dummy && bundle exec rake db:create db:migrate --trace
+    - cd spec/dummy
+    - echo $PWD
+    - bundle exec bundle install
+    - bundle exec rake db:create db:migrate --trace
