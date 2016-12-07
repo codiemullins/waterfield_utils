@@ -1,3 +1,3 @@
 class Hickwall < ApplicationRecord
-  acts_as_bazinga
+  acts_as_waterfield_utils
 end

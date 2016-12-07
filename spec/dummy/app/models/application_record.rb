@@ -1,5 +1,5 @@
 class ApplicationRecord < ActiveRecord::Base
-  include Bazinga::ActsAsBazinga
+  include WaterfieldUtils::ActsAsWaterfieldUtils
 
   self.abstract_class = true
 end

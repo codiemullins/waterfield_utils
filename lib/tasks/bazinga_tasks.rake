@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :bazinga do
+# task :waterfield_utils do
 #   # Task goes here
 # end

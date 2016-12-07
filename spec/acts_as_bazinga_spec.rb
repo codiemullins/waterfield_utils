@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Hickwall do
-  it { expect(Hickwall.bazinga_text_field).to eq 'last_squawk' }
+  it { expect(Hickwall.waterfield_utils_text_field).to eq 'last_squawk' }
 
   it 'squawks!' do
     hickwall = Hickwall.new
@@ -11,8 +11,8 @@ describe Hickwall do
 end
 
 describe Wickwall do
-  it 'bazinga_text_field should equal last_tweet' do
-    expect(Wickwall.bazinga_text_field).to eq 'last_tweet'
+  it 'waterfield_utils_text_field should equal last_tweet' do
+    expect(Wickwall.waterfield_utils_text_field).to eq 'last_tweet'
   end
 
   it 'stores the latest squawk in last_tweet' do

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bazinga (0.1.0)
+    waterfield_utils (0.1.0)
       rails (~> 3.2.16)
 
 GEM
@@ -148,12 +148,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bazinga!
   guard
   guard-rspec
   rspec
   rspec-rails
   sqlite3
+  waterfield_utils!
 
 BUNDLED WITH
    1.12.5
