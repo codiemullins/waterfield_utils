@@ -1,16 +1,31 @@
 require 'spec_helper'
 
-describe 'AutoFixer' do
+describe WaterfieldUtils::AutoFixer do
   describe '#find_by_field' do
 
     describe 'without override' do
-      subject { Hickwall.find_by_field }
-      it { is_expected.to eq nil }
+      subject { Meter.find_by_field }
+      it { is_expected.to eq :number }
     end
+  end
 
-    describe 'with override of wickwall_number' do
-      subject { Wickwall.find_by_field :wickwall_number }
-      it('should equal wickwall_number') { is_expected.to eq :wickwall_number }
+  describe '#fix_relationships' do
+
+    describe Meter do
+      subject { Meter.fix_relationships }
+
+      it 'should return an Array of relationship objects' do
+        is_expected.to eq [
+          {
+            name: :asset,
+            association_klass: Asset,
+            find_by_field: :number,
+            asset: false,
+            company_code: false,
+            company: false,
+          }
+        ]
+      end
     end
   end
 end

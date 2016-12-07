@@ -11,10 +11,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20161206005957) do
+ActiveRecord::Schema.define(:version => 20161207184330) do
+
+  create_table "assets", :force => true do |t|
+    t.string   "number"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "hickwalls", :force => true do |t|
     t.string   "last_squawk"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "meters", :force => true do |t|
+    t.integer  "asset_id"
+    t.string   "number"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
