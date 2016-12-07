@@ -20,15 +20,7 @@ module WaterfieldUtils
 
       def fix_relationships
         reflections.select { |_, r| r.macro == :belongs_to }.map do |name, association|
-          columns = association.klass.column_names.map(&:to_sym)
-          {
-            name: name,
-            association_klass: association.klass,
-            find_by_field: association.klass.find_by_field,
-            asset: columns.include?(:asset_id),
-            company_code: columns.include?(:company_code_id),
-            company: columns.include?(:company_id),
-          }
+          WaterfieldUtils::Relationship.new(name, association)
         end
       end
     end
