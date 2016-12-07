@@ -1,4 +1,4 @@
-class CreateHickwalls < ActiveRecord::Migration[5.0]
+class CreateHickwalls < ActiveRecord::Migration
   def change
     create_table :hickwalls do |t|
       t.string :last_squawk
