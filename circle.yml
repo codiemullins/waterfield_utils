@@ -1,0 +1,6 @@
+machine:
+
+  timezone: America/Chicago
+
+  ruby:
+    version: 2.1.4p265
