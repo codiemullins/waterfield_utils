@@ -3,4 +3,5 @@ machine:
   ruby:
     version: 2.2.6
 database:
-  pwd: spec/dummy
+  override:
+    - cd spec/dummy && bundle exec rake db:create db:migrate --trace
