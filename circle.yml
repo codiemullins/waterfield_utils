@@ -3,5 +3,4 @@ machine:
   ruby:
     version: 2.2.6
 database:
-  pre:
-    - cd spec/dummy
+  pwd: spec/dummy
