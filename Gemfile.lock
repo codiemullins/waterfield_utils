@@ -3,6 +3,7 @@ PATH
   specs:
     waterfield_utils (0.1.0)
       rails (~> 3.2.16)
+      sqlite3
 
 GEM
   remote: https://rubygems.org/
@@ -159,7 +160,6 @@ DEPENDENCIES
   rspec
   rspec-rails
   simplecov
-  sqlite3
   waterfield_utils!
 
 BUNDLED WITH
