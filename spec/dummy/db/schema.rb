@@ -20,23 +20,10 @@ ActiveRecord::Schema.define(:version => 20161207184330) do
     t.datetime "updated_at"
   end
 
-  create_table "hickwalls", :force => true do |t|
-    t.string   "last_squawk"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "meters", :force => true do |t|
     t.integer  "asset_id"
     t.string   "number"
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "wickwalls", :force => true do |t|
-    t.string   "last_squawk"
-    t.string   "last_tweet"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

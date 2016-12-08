@@ -3,7 +3,7 @@ PATH
   specs:
     waterfield_utils (0.1.0)
       rails (~> 3.2.16)
-      rake
+      rake (~> 12.0.0)
 
 GEM
   remote: https://rubygems.org/
