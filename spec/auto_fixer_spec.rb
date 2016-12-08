@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe WaterfieldUtils::AutoFixer do
-  describe '#find_by_field' do
+  describe 'find_by_field' do
 
     describe 'without override' do
       subject { Meter.find_by_field }

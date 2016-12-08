@@ -1,7 +1,6 @@
 .bundle/
 coverage/
 log/*.log
-bin/
 pkg/
 tmp/
 spec/dummy/db/*.sqlite3
