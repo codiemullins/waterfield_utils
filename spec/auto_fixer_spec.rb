@@ -7,6 +7,11 @@ describe WaterfieldUtils::AutoFixer do
       subject { Meter.find_by_field }
       it { is_expected.to eq :number }
     end
+
+    describe 'with override' do
+      subject { CompanyCode.find_by_field }
+      it { is_expected.to eq :name }
+    end
   end
 
   describe 'Meter.fix_relationships' do

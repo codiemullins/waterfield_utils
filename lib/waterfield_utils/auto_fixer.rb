@@ -23,6 +23,15 @@ module WaterfieldUtils
           WaterfieldUtils::Relationship.new(name, association)
         end
       end
+
+      def fix params
+        fix_with_root params, self
+      end
+
+    end
+
+    def fix_with_root params, root
+      Fixer.new(params, root, self).call
     end
   end
 end
