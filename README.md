@@ -1,4 +1,4 @@
-# WaterfieldUtils
+# WaterfieldUtils [![Build Status](https://travis-ci.org/codiemullins/waterfield_utils.svg?branch=master)](https://travis-ci.org/codiemullins/waterfield_utils)
 Short description and motivation.
 
 ## Usage
