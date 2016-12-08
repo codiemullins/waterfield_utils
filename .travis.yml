@@ -1,7 +1,7 @@
 language: ruby
 services: sqlite3
 rvm:
-  - 2.2
+  - 2.2.4
 install:
   - cd spec/dummy && bundle install --deployment && bundle exec rake db:create db:migrate --trace
   - bundle install
