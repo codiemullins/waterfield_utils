@@ -5,4 +5,4 @@ machine:
 database:
   override:
     - pwd && bundle exec bundle install
-    - cd spec/dummy && pwd && bundle env && bundle exec bundle install --verbose && bundle exec rake db:create db:migrate --trace
+    - cd spec/dummy && pwd && bundle env && bundle exec rake db:create db:migrate --trace
