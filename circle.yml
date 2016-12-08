@@ -1,7 +1,7 @@
 machine:
   timezone: America/Chicago
   ruby:
-    version: rbx-2.2.6
+    version: 2.2.4
 database:
   override:
     - cd spec/dummy && bundle install --deployment && bundle exec rake db:create db:migrate --trace
