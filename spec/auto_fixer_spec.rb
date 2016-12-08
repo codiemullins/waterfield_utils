@@ -11,6 +11,9 @@ describe WaterfieldUtils::AutoFixer do
 
   describe 'Meter.fix_relationships' do
     subject { Meter.fix_relationships }
-    it { is_expected.to include(a_kind_of(WaterfieldUtils::Relationship)) }
+    it do
+      puts ActiveRecord::Base.connection.select_all 'SELECT name FROM sqlite_master'
+      is_expected.to include(a_kind_of(WaterfieldUtils::Relationship))
+    end
   end
 end
