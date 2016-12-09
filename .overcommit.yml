@@ -24,7 +24,7 @@ PreCommit:
 PrePush:
   Rspec:
     enabled: true
-    command: 'bin/rspec'
+    command: ['./bin/rspec']
 
 #PreCommit:
 #  RuboCop:
