@@ -21,10 +21,10 @@ PreCommit:
     description: 'Checking for missing inclusion of spec_helper'
     include: '**/*_spec.rb'
 
-PrePush:
-  Rspec:
-    enabled: true
-    command: ['./bin/rspec']
+# PrePush:
+#   Rspec:
+#     enabled: true
+#     command: ['./bin/rspec']
 
 #PreCommit:
 #  RuboCop:
