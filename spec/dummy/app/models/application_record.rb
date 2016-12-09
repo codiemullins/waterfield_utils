@@ -1,5 +1,4 @@
 class ApplicationRecord < ActiveRecord::Base
-  # include WaterfieldUtils::ActsAsWaterfieldUtils
   include WaterfieldUtils::PermittedParams
   include WaterfieldUtils::AutoFixer
 
