@@ -1,10 +1,10 @@
 require 'simplecov'
-# save to CircleCI's artifacts directory if we're on CircleCI
-if ENV['CIRCLE_ARTIFACTS']
-  dir = File.join(ENV['CIRCLE_ARTIFACTS'], "coverage")
-  SimpleCov.coverage_dir(dir)
-end
 SimpleCov.start
+
+if ENV['TRAVIS']
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+end
 
 # Configure Rails Environment
 ENV["RAILS_ENV"] = "test"

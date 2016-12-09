@@ -10,7 +10,7 @@ describe WaterfieldUtils::Relationship do
       name: :asset,
       klass: Asset,
       asset?: false,
-      company_code?: false,
+      company_code?: true,
       company?: false,
       find_by_field: :number,
     )

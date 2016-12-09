@@ -37,6 +37,10 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.3)
     builder (3.0.4)
+    codecov (0.1.9)
+      json
+      simplecov
+      url
     coderay (1.1.1)
     diff-lcs (1.2.5)
     docile (1.1.5)
@@ -150,11 +154,13 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.52)
+    url (0.3.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  codecov
   guard
   guard-rspec
   rspec
